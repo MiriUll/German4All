@@ -1,4 +1,3 @@
-from huggingface_hub import login
 from datasets import load_dataset
 import pandas as pd
 from evaluation_structure import *
@@ -14,10 +13,9 @@ client = OpenAI(
     api_key="-"
 )
 
-login(token="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")
 
 #german4all_main = load_dataset("../dataset/annotatedmain")
-#german4all_corrected = load_dataset("../dataset/annotated"corrected")
+#german4all_corrected = load_dataset("../dataset/corrected")
 german4all_annotated = load_dataset("../dataset/annotated")
 
 g4a = {
