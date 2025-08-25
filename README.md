@@ -1,19 +1,16 @@
 # German4All
 ## Dataset and Models for German Paraphrasing into Different Complexity Levels
 
-This repository contains the German4All dataset and code that was used to create it. The dataset and our fine-tuned model is uploaded to the HuggingFace hub for easier loading and usage. However, this link was removed for the blinded review.
+![Overview of the dataset curation process](https://github.com/MiriUll/German4All/blob/main/German4All_construction.png)
 
-## Dataset example
-* Orig text: Die vier zum Teil beschädigten Nischenfiguren der Südfassade unterhalb des Giebels stellen Drama, Gesang, Musik und Tanz dar. Sie wurden von dem Stuttgarter Bildhauer Theodor Bausch geschaffen.
-* Level 1: An einem großen Haus gibt es Figuren aus Stein. Sie sind ein bisschen kaputt. Die Figuren zeigen vier Dinge: ein Theaterstück, Singen, Musik und Tanzen. Ein Mann namens Theodor Bausch hat sie gemacht.  
--> LLM judge annotations: content_preservation = approximately, information_loss = often, information_addition = seldom,  complexity_level = a bit too complicated
-* Level 2: An der Südseite eines Gebäudes gibt es vier beschädigte Statuen. Diese Statuen zeigen vier Künste: Schauspiel, Gesang, Musik und Tanz. Ein Künstler aus Stuttgart, Theodor Bausch, hat sie erschaffen.  
--> LLM judge annotations: content_preservation = approximately, information_loss = sometimes, information_addition = seldom,  complexity_level = a bit too easy
-* Level 3: An der Südwand eines Gebäudes befinden sich vier teilweise beschädigte Statuen. Sie symbolisieren Dramatik, Gesang, Musik und Tanz. Diese Kunstwerke wurden vom Stuttgarter Bildhauer Theodor Bausch geschaffen.  
--> LLM judge annotations: content_preservation = correct, information_loss = seldom, information_addition = seldom,  complexity_level = appropriate
-* Level 4:Die Südfassade des Gebäudes ziert eine Reihe von Nischenfiguren, die trotz teils sichtbarer Schäden die Künste des Dramas, Gesanges, der Musik und des Tanzes darstellen. Sie sind Werke des renommierten Stuttgarter Bildhauers Theodor Bausch.  
--> LLM judge annotations: content_preservation = correct, information_loss = never, information_addition = seldom,  complexity_level = appropriate
-* Level 5: Die Südfassade des architektonischen Werkes weist vier beschädigte Nischenfiguren auf, welche die Disziplinen Drama, Gesang, Musik und Tanz repräsentieren. Diese künstlerischen Darstellungen wurden von Theodor Bausch, einem Bildhauer aus Stuttgart, gefertigt und reflektieren kulturelle Ausdrucksformen der bildenden Künste.  
--> LLM judge annotations: content_preservation = approximately, information_loss = sometimes, information_addition = often,  complexity_level = a bit too complicated
+This repository contains the German4All dataset and code that was used to create it. The [dataset](https://huggingface.co/datasets/tum-nlp/German4All-Corpus) and our fine-tuned model are uploaded to the [HuggingFace hub](https://huggingface.co/collections/tum-nlp/german4all-67477a7e9583754ed0bc3050) for easier loading and usage. You can find further details on how to use these artifacts on their respective pages.
 
-The samples are all of high quality. However, levels 3 and 4 achieve the best content preservation, while level 1 removes information ("Südfassade unterhalb des Giebels", "Stuttgarter") and level 5 adds information ("architektonischen Werkes", "reflektieren kulturelle Ausdrucksformen der bildenden Künste").
+This repository contains the following add-ons:
+* Code to reproduce the sample generation
+* Code to reproduce the LLM judge annotations
+* LLM judge annotations for customized filters of the synthetic dataset
+* Predictions of our models on common simplification benchmark datasets ([Stodden et al. 2024](https://aclanthology.org/2024.determit-1.1/))
+
+## Citation
+If you use any of our artifacts, please cite our paper as 
+[tba]
