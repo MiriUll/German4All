@@ -13,4 +13,14 @@ This repository contains the following add-ons:
 
 ## Citation
 If you use any of our artifacts, please cite our paper as 
-[tba]
+```bibtex
+@misc{anschuetz2025german4alldatasetmodel,
+      title={German4All -- A Dataset and Model for Readability-Controlled Paraphrasing in German}, 
+      author={Miriam Anschütz and Thanh Mai Pham and Eslam Nasrallah and Maximilian Müller and Cristian-George Craciun and Georg Groh},
+      year={2025},
+      eprint={2508.17973},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2508.17973}, 
+}
+```
