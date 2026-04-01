@@ -14,13 +14,25 @@ This repository contains the following add-ons:
 ## Citation
 If you use any of our artifacts, please cite our paper as 
 ```bibtex
-@misc{anschuetz2025german4alldatasetmodel,
-      title={German4All -- A Dataset and Model for Readability-Controlled Paraphrasing in German}, 
-      author={Miriam Anschütz and Thanh Mai Pham and Eslam Nasrallah and Maximilian Müller and Cristian-George Craciun and Georg Groh},
-      year={2025},
-      eprint={2508.17973},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2508.17973}, 
+@inproceedings{anschutz-etal-2025-german4all,
+    title = "{G}erman4{A}ll {--} A Dataset and Model for Readability-Controlled Paraphrasing in {G}erman",
+    author = {Ansch{\"u}tz, Miriam  and
+      Pham, Thanh Mai  and
+      Nasrallah, Eslam  and
+      M{\"u}ller, Maximilian  and
+      Craciun, Cristian-George  and
+      Groh, Georg},
+    editor = "Flek, Lucie  and
+      Narayan, Shashi  and
+      Phương, L{\^e} Hồng  and
+      Pei, Jiahuan",
+    booktitle = "Proceedings of the 18th International Natural Language Generation Conference",
+    month = oct,
+    year = "2025",
+    address = "Hanoi, Vietnam",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.inlg-main.24/",
+    pages = "390--407",
 }
+
 ```
